@@ -5,12 +5,15 @@ template:
   name: study1124
 before:
   - type: createIssue
-    title: Welcome!
+    title: Getting Started with GitHub
     body: new-issue.md
 steps:
-  - title: First step
+  - title: Assign yourself
     description: The first step in your course
     event: issues.assigned
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
+        issue: >-
+          On the right side of the screen, under the "Assignees" section, click
+          the gear icon and select yourself
